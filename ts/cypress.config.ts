@@ -1,7 +1,8 @@
-import { defineConfig } from "cypress";
+import { defineConfig } from 'cypress';
 const getCompareSnapshotsPlugin = require('cypress-visual-regression/dist/plugin');
 
 export default defineConfig({
+  video: true,
   env: {
     screenshotsFolder: './cypress/snapshots/actual',
     trashAssetsBeforeRuns: true,
